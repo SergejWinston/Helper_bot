@@ -50,7 +50,7 @@ p.s. Это слева вагона
 @bot.message_handler(commands=['start'])
 def welcome(message):
     chat_id = message.chat.id
-    keyboard = telebot.types.ReplyKeyboardMarkup()
+    keyboard = telebot.types.ReplyKeyboardMarkup(row_width=1)
     # button1 = telebot.types.KeyboardButton(text="Кнопка 1")
     # button2 = telebot.types.KeyboardButton(text="Кнопка 2")
     # button3 = telebot.types.KeyboardButton(text="Кнопка 3")
